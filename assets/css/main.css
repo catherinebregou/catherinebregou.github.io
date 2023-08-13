@@ -3812,11 +3812,6 @@ input, select, textarea {
 					padding: 4rem 2rem 2rem 2rem ;
 				}
 
-					#main > .post header.major > .date {
-						margin-top: -1rem;
-						margin-bottom: 2rem;
-					}
-
 					#main > .post header.major > h1, #main > .post header.major h2 {
 						font-size: 2.5rem;
 						line-height: 1.2;
