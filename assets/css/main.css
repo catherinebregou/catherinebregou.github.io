@@ -3967,19 +3967,19 @@ input, select, textarea {
 				/* Styles for the image */
 				.section-image {
 					flex: 1;
-					max-width: 50%;
+					max-width: 600px;
 					padding: 10px;
 				}
 		
 				/* Styles for the description */
 				.section-description {
 					flex: 1;
-					max-width: 50%;
+					max-width: 100%;
 					padding: 10px;
 				}
 		
 				/* Responsive adjustments */
-				@media (max-width: 768px) {
+				@media (max-width: 100px) {
 					.section-container {
 						flex-direction: column;
 					}
@@ -3988,6 +3988,29 @@ input, select, textarea {
 					.section-description {
 						max-width: 100%;
 					}
+				}
+
+
+
+				.section-container {
+					display: flex;
+					align-items: center;
+				}
+				
+				.section-image {
+					flex: 1;
+					max-width: 900px; /* Adjust this value */
+					padding: 10px;
+				}
+				
+				.section-image img {
+					width: 100%; /* Ensure the image takes up the full width of its container */
+					height: auto;
+				}
+				
+				.section-description {
+					flex: 2;
+					padding: 10px;
 				}
 /* Nav Panel */
 
