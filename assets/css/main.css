@@ -3953,6 +3953,42 @@ input, select, textarea {
 			color: #777;
 			margin-bottom: 3rem;
 		}
+
+		        /* Styles for the container */
+				.section-container {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin: 20px;
+					padding: 20px;
+					border: 1px solid #ddd;
+				}
+		
+				/* Styles for the image */
+				.section-image {
+					flex: 1;
+					max-width: 50%;
+					padding: 10px;
+				}
+		
+				/* Styles for the description */
+				.section-description {
+					flex: 1;
+					max-width: 50%;
+					padding: 10px;
+				}
+		
+				/* Responsive adjustments */
+				@media (max-width: 768px) {
+					.section-container {
+						flex-direction: column;
+					}
+		
+					.section-image,
+					.section-description {
+						max-width: 100%;
+					}
+				}
 /* Nav Panel */
 
 	#navPanelToggle {
