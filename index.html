@@ -38,7 +38,7 @@
                             <div class="section-description">
                                 <h2>About Me</h2>
                                 <p>
-                                    Hello! My name is Catherine Bregou (she/her) and I am a rising junior computer science major at Carleton College. I am from Hanover, New Hampshire and some of my hobbies include hosting my radio show, playing ultimate frisbee, crocheting, nordic skiing, and watching Modern Family in Spanish (Familia Moderna). Below you can see some projects that I have worked on! If you want to learn more about me you can contact me at bregouc@carleton.edu or view my resume <a href="images/resume.pdf" target="_blank">here</a>.
+                                    Hello! My name is Catherine Bregou (she/her) and I am a rising senior computer science major at Carleton College. I am from Hanover, New Hampshire and some of my hobbies include hosting my radio show, playing ultimate frisbee, crocheting, nordic skiing, and watching Modern Family in Spanish (Familia Moderna). This summer I got the opportunity to intern at Microsoft where I worked on cutting-edge mobile device management solutions. Below you can see some of my personal projects. If you want to learn more about me you can contact me at bregouc@carleton.edu or view my resume <a href="images/Catherine Bregou Resume 2024 (1).pdf" target="_blank">here</a>.
                                 </p>
                             </div>
                         </section>
@@ -47,11 +47,46 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2>Dynamic UI/UX Website Developments with React </h2>
+										<h2>Online Othello Game with AI Opponents</h2>
 									</header>
-									<img src="images/face.png" alt="" class="image fit" />
-									<p>I have successfully designed and developed multiple cutting-edge, fully responsive UI/UX websites using React JS. The most recent is inspired by ChatGPT's capabilities. This project demonstrates my expertise in creating a dynamic user interface that seamlessly adapts to diverse devices and screen sizes. By integrating React's powerful functionalities, I've crafted an intuitive and interactive website that embodies modern design principles.</p>
+									<div class="image fit" style="position: relative; cursor: pointer;">
+										<img src="images/othelloframe.png" alt="Click to play video" id="videoThumbnail" style="width: 100%; display: block;">
+										<video controls id="othelloVideo" style="width: 100%; display: none;">
+											<source src="images/othellogame (2).mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>
+									<p>I collaborated with a team to develop an online version of the game Othello. The game features a secure login system, two levels of AI opponents, and a multi-player mode that allows players to send codes to friends for competitive play. Additionally, players can send emojis during games for interactive communication. A stats page records and displays the outcomes of previous games. A quick demo is available if you click the image above, and for those interested in exploring the codebase further, click <a href="https://github.com/millerr2024/Othello-Project" target="_blank">here</a> to access our repository.</p>
 								</article>
+								
+								<script>
+									function playVideo() {
+										var video = document.getElementById('othelloVideo');
+										var thumbnail = document.getElementById('videoThumbnail');
+										console.log("Play function triggered"); // Log to confirm function trigger
+										thumbnail.style.display = 'none'; // Hide the image
+										video.style.display = 'block'; // Show the video
+										video.play().then(() => {
+											console.log("Video started playing"); // Log to confirm video started playing
+										}).catch((error) => {
+											console.error("Error playing video:", error); // Log any errors
+										});
+									}
+								
+									document.getElementById('videoThumbnail').addEventListener('click', playVideo);
+								</script>
+
+								<article>
+                                    <header>
+                                        <h2>Artificial Life and Digital Evolution</h2>
+                                    </header>
+                                    <video controls class="image fit">
+                                        <source src="images/evolution.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p>I developed a Digital Evolution environment to study the intricate relationship between host organisms and parasites. In this environment, blue organisms represent parasites, unable to reproduce independently, while orange organisms represent hosts that can reproduce either with other orange organisms or be exploited by parasites for reproduction. Each organism possesses a unique genome and evolves over time to enhance its efficiency in achieving its objectives, with evolutionary progress indicated by slight color changes. The results of my experiment revealed that the presence of parasites unexpectedly benefits host organisms by increasing competition.</p>
+                                </article>
+								
 
                                 <article>
 									<header>
@@ -60,17 +95,6 @@
 									<img src="images/map.png" alt="" class="image fit" />
 									<p>I led the creation of a data visualization site using Department of Homeland Security data, simplifying global immigration insights. I developed a user-friendly platform with customizable SQL queries, generating intuitive graphs and maps. y emphasis on accessibility ensured WAVE test compliance, achieved through contrast optimization and seamless audio integration, resulting in an inclusive user experience.</p>
 								</article>
-
-                                <article>
-                                    <header>
-                                        <h2>Artificial Life and Digital Evolution</h2>
-                                    </header>
-                                    <video controls class="image fit">
-                                        <source src="images/evolution.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <p>I used Digital Evolution to explore the intricate relationship between host organisms and parasites. Each organism bore a unique genome, evolving over time to enhance efficiency in achieving its objectives. The outcome of my experiment revealed that the presence of parasites unexpectedly benefits reproducer organisms through heightened competition. I expanded this study by modifying variables, allowing me to investigate ecosystem responses across diverse circumstances and extended timeframes.</p>
-                                </article>
 
                                 <article>
 									<header>
